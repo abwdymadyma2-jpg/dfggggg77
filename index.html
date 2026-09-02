@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10211d">
+  <meta name="description" content="شركة عزل خزانات بالرياض — تنظيف الخزان 250 ريال وعزل الخزان 750 ريال لفترة محدودة.">
+  <title>عزل خزانات بالرياض | عرض لفترة محدودة</title>
+  <style>
+    :root {
+      --ink: #13221f;
+      --muted: #61706c;
+      --cream: #f8f6ef;
+      --paper: #fffdf8;
+      --line: #e7e4da;
+      --green: #0f6a55;
+      --green-dark: #0b3f35;
+      --mint: #cce9d8;
+      --orange: #f47c3c;
+      --yellow: #f7d466;
+      --shadow: 0 22px 70px rgba(23, 49, 41, .12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 7% 8%, rgba(204,233,216,.6) 0 9%, transparent 9.3%),
+        radial-gradient(circle at 93% 28%, rgba(247,212,102,.25) 0 12%, transparent 12.3%),
+        var(--cream);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(1120px, calc(100% - 34px)); margin: 0 auto; }
+
+    .top-strip {
+      background: var(--green-dark);
+      color: #e9f7ee;
+      font-size: 13px;
+      text-align: center;
+      padding: 7px 14px;
+      letter-spacing: .1px;
+    }
+    .top-strip strong { color: var(--yellow); }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(255,253,248,.9);
+      border-bottom: 1px solid rgba(231,228,218,.85);
+      backdrop-filter: blur(15px);
+    }
+    .nav {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 900; }
+    .brand-mark {
+      width: 42px; height: 42px; border-radius: 13px 13px 13px 4px;
+      display: grid; place-items: center;
+      color: #fff; background: var(--green);
+      box-shadow: 5px 5px 0 var(--yellow);
+      font-size: 21px;
+    }
+    .brand small { display: block; color: var(--muted); font-size: 11px; font-weight: 600; line-height: 1.3; }
+    .brand b { display: block; font-size: 16px; line-height: 1.3; }
+    .nav-links { display: flex; gap: 25px; align-items: center; color: #4d5d58; font-size: 14px; font-weight: 700; }
+    .nav-links a { transition: color .2s ease; }
+    .nav-links a:hover { color: var(--green); }
+    .nav-call {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 16px; border: 1px solid var(--green);
+      border-radius: 999px; color: var(--green); font-weight: 800; font-size: 13px;
+    }
+
+    .hero { padding: 76px 0 54px; position: relative; }
+    .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 60px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--green); font-size: 13px; font-weight: 900; margin-bottom: 17px;
+    }
+    .eyebrow i { width: 9px; height: 9px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 6px rgba(244,124,60,.13); }
+    h1 { font-size: clamp(38px, 5.5vw, 72px); line-height: 1.08; letter-spacing: -2px; margin: 0 0 20px; max-width: 650px; }
+    h1 em { color: var(--green); font-style: normal; position: relative; }
+    h1 em:after { content: ""; position: absolute; right: 0; left: 0; bottom: -4px; height: 8px; border-radius: 99px; background: rgba(247,212,102,.8); z-index: -1; transform: rotate(-1deg); }
+    .hero-copy { max-width: 565px; color: var(--muted); font-size: 17px; margin: 0 0 27px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .btn {
+      display: inline-flex; justify-content: center; align-items: center; gap: 9px;
+      min-height: 51px; border-radius: 12px; border: 0; padding: 0 21px;
+      font: inherit; font-size: 14px; font-weight: 900; cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { background: var(--orange); color: #fff; box-shadow: 0 10px 22px rgba(244,124,60,.22); }
+    .btn-primary:hover { box-shadow: 0 15px 30px rgba(244,124,60,.3); }
+    .btn-dark { background: var(--green-dark); color: #fff; }
+    .btn-light { background: #fff; color: var(--green); border: 1px solid var(--line); }
+    .hero-note { color: #7b8783; font-size: 12px; margin: 15px 0 0; }
+    .hero-note span { color: var(--orange); font-weight: 900; }
+
+    .flyer {
+      position: relative; padding: 27px; min-height: 435px; border-radius: 26px;
+      color: #fff; overflow: hidden; background: var(--green-dark);
+      box-shadow: var(--shadow);
+    }
+    .flyer:before, .flyer:after { content: ""; position: absolute; border-radius: 50%; border: 1px solid rgba(255,255,255,.15); pointer-events: none; }
+    .flyer:before { width: 360px; height: 360px; left: -160px; bottom: -180px; box-shadow: 0 0 0 35px rgba(255,255,255,.035), 0 0 0 70px rgba(255,255,255,.035); }
+    .flyer:after { width: 210px; height: 210px; right: -105px; top: -110px; }
+    .flyer-head { display: flex; justify-content: space-between; align-items: flex-start; position: relative; z-index: 1; }
+    .flyer-kicker { color: var(--yellow); font-size: 13px; font-weight: 900; }
+    .limited { background: var(--yellow); color: var(--green-dark); border-radius: 999px; padding: 5px 12px; font-size: 11px; font-weight: 900; }
+    .flyer h2 { font-size: 31px; line-height: 1.25; margin: 42px 0 14px; max-width: 300px; position: relative; z-index: 1; }
+    .flyer p { color: #c9ded2; font-size: 14px; max-width: 320px; margin: 0 0 22px; position: relative; z-index: 1; }
+    .price-row { display: flex; gap: 10px; position: relative; z-index: 1; }
+    .price-box { flex: 1; padding: 15px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); border-radius: 15px; }
+    .price-box b { display: block; color: var(--yellow); font-size: 27px; line-height: 1.15; }
+    .price-box span { display: block; color: #d9e7df; font-size: 11px; margin-top: 4px; }
+    .flyer-footer { position: absolute; right: 27px; left: 27px; bottom: 23px; display: flex; justify-content: space-between; gap: 10px; color: #b9d1c5; font-size: 11px; z-index: 1; }
+    .drop-icon { font-size: 52px; position: absolute; left: 30px; bottom: 58px; opacity: .24; transform: rotate(10deg); }
+
+    .side-actions {
+      position: fixed; right: 16px; top: 50%; transform: translateY(-50%);
+      z-index: 40; display: flex; flex-direction: column; gap: 11px;
+    }
+    .side-btn {
+      width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center;
+      color: #fff; box-shadow: 0 12px 27px rgba(0,0,0,.16);
+      position: relative; transition: transform .2s ease;
+    }
+    .side-btn:hover { transform: scale(1.08) rotate(-2deg); }
+    .side-btn svg { width: 27px; height: 27px; fill: currentColor; }
+    .side-btn small { position: absolute; right: 72px; white-space: nowrap; background: #fff; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 5px 9px; font-size: 11px; font-weight: 900; opacity: 0; transform: translateX(6px); transition: .2s ease; pointer-events: none; }
+    .side-btn:hover small { opacity: 1; transform: translateX(0); }
+    .side-whatsapp { background: #18b96d; animation: pulse 2.4s infinite; }
+    .side-phone { background: var(--orange); animation: pulse 2.4s .8s infinite; }
+    @keyframes pulse { 0%, 70%, 100% { box-shadow: 0 12px 27px rgba(0,0,0,.16), 0 0 0 0 rgba(24,185,109,.28); } 82% { box-shadow: 0 12px 27px rgba(0,0,0,.16), 0 0 0 13px rgba(24,185,109,0); } }
+
+    .trust { padding: 17px 0 43px; }
+    .trust-line { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; padding: 17px 25px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 800; }
+    .trust-line span { display: inline-flex; align-items: center; gap: 8px; }
+    .trust-line strong { color: var(--orange); font-size: 19px; letter-spacing: 1px; }
+
+    section { padding: 74px 0; }
+    .section-head { display: flex; justify-content: space-between; gap: 25px; align-items: end; margin-bottom: 31px; }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 42px); line-height: 1.2; letter-spacing: -1px; }
+    .section-head p { max-width: 420px; color: var(--muted); font-size: 14px; margin: 0; }
+    .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 45px; align-items: center; }
+    .about-card { background: var(--green); color: #fff; border-radius: 23px; padding: 32px; min-height: 280px; position: relative; overflow: hidden; }
+    .about-card:after { content: "滴"; position: absolute; left: 20px; bottom: -36px; color: rgba(255,255,255,.1); font-size: 170px; font-weight: 900; }
+    .about-card h3 { margin: 0 0 11px; font-size: 25px; position: relative; z-index: 1; }
+    .about-card p { color: #d7eee1; margin: 0; font-size: 14px; position: relative; z-index: 1; }
+    .about-copy h3 { font-size: 25px; margin: 0 0 12px; }
+    .about-copy p { color: var(--muted); font-size: 15px; margin: 0 0 18px; }
+    .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 9px; }
+    .check-list li { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 800; }
+    .check-list li:before { content: "✓"; display: grid; place-items: center; width: 23px; height: 23px; border-radius: 50%; color: var(--green); background: var(--mint); font-weight: 900; }
+
+    .soft-section { background: #eef4ed; }
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+    .service { background: var(--paper); border: 1px solid rgba(231,228,218,.8); border-radius: 18px; padding: 25px; transition: transform .2s ease, box-shadow .2s ease; }
+    .service:hover { transform: translateY(-5px); box-shadow: 0 18px 34px rgba(35,70,55,.1); }
+    .service-icon { width: 50px; height: 50px; display: grid; place-items: center; background: var(--mint); border-radius: 15px; font-size: 23px; margin-bottom: 17px; }
+    .service h3 { font-size: 18px; margin: 0 0 7px; }
+    .service p { color: var(--muted); font-size: 13px; margin: 0; }
+    .service .service-link { display: inline-block; color: var(--orange); font-size: 12px; font-weight: 900; margin-top: 15px; }
+
+    .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+    .feature { padding: 20px 16px; border-right: 3px solid var(--yellow); }
+    .feature b { display: block; margin-bottom: 5px; font-size: 15px; }
+    .feature span { color: var(--muted); font-size: 12px; }
+
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+    .review { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 23px; }
+    .stars { color: var(--orange); letter-spacing: 2px; font-size: 15px; }
+    .review p { color: #4f5e5a; font-size: 14px; margin: 12px 0 18px; }
+    .review-user { display: flex; align-items: center; gap: 9px; font-size: 12px; font-weight: 900; }
+    .avatar { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; color: var(--green); background: var(--mint); }
+
+    .contact-box { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: center; background: var(--yellow); border-radius: 25px; padding: 32px 38px; }
+    .contact-box h2 { margin: 0 0 7px; font-size: 29px; line-height: 1.25; }
+    .contact-box p { margin: 0; color: #58604e; font-size: 14px; }
+    .contact-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    footer { background: var(--green-dark); color: #d8e9df; padding: 28px 0; font-size: 12px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap; }
+    .designer { color: var(--yellow); font-weight: 900; border-bottom: 1px dashed var(--yellow); }
+    .designer:hover { color: #fff; }
+    .copyright { color: #9ebcaf; }
+
+    .toast { position: fixed; left: 18px; bottom: 18px; z-index: 100; background: var(--green-dark); color: #fff; border-radius: 12px; padding: 12px 16px; font-size: 13px; box-shadow: var(--shadow); opacity: 0; transform: translateY(15px); pointer-events: none; transition: .25s ease; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    @media (max-width: 860px) {
+      .nav-links { display: none; }
+      .hero { padding-top: 48px; }
+      .hero-grid, .about-grid { grid-template-columns: 1fr; gap: 35px; }
+      .flyer { min-height: 390px; }
+      .services { grid-template-columns: repeat(2, 1fr); }
+      .features { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 570px) {
+      .container { width: min(100% - 28px, 1120px); }
+      body { text-align: center; }
+      .top-strip { font-size: 11px; }
+      .nav { min-height: 65px; }
+      .brand-mark { width: 37px; height: 37px; }
+      .brand b { font-size: 14px; }
+      .brand span:last-child { text-align: center; }
+      .nav-call { padding: 8px 11px; font-size: 11px; }
+      h1 { font-size: 40px; letter-spacing: -1px; }
+      .hero-copy { font-size: 15px; }
+      .hero-actions, .hero-actions .btn { width: 100%; }
+      .flyer { padding: 23px; border-radius: 19px; }
+      .flyer h2 { font-size: 27px; margin-top: 34px; }
+      .flyer-head, .flyer-footer { justify-content: center; flex-wrap: wrap; }
+      .price-box { padding: 12px; }
+      .price-box b { font-size: 23px; }
+      .flyer-footer { right: 23px; left: 23px; }
+      .side-actions { right: 8px; top: 50%; bottom: auto; transform: translateY(-50%); flex-direction: column; }
+      .side-btn { width: 53px; height: 53px; border-radius: 15px; }
+      .side-btn small { display: none; }
+      section { padding: 57px 0; }
+      .section-head { display: block; }
+      .section-head h2 { margin-bottom: 10px; }
+      .services, .reviews-grid { grid-template-columns: 1fr; }
+      .features { gap: 4px; }
+      .feature { padding: 15px 11px; }
+      .about-copy .check-list { justify-items: center; }
+      .contact-box { grid-template-columns: 1fr; padding: 25px 22px; }
+      .contact-buttons, .contact-buttons .btn { width: 100%; }
+      .footer-inner { justify-content: center; text-align: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *:before, *:after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+    for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+    ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+    ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D8IQFR3C77UA4F3IMNCG');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+</head>
+<body>
+  <div class="top-strip">عرض خاص لفترة محدودة — <strong>تنظيف الخزان بـ 250 ريال</strong> | العزل بـ 750 ريال</div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#الرئيسية" aria-label="شركة عزل خزانات بالرياض">
+        <span class="brand-mark">⌁</span>
+        <span><small>حلول نظافة وحماية</small><b>عزل خزانات الرياض</b></span>
+      </a>
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a href="#من-نحن">من نحن</a>
+        <a href="#خدماتنا">خدماتنا</a>
+        <a href="#التقييمات">التقييمات</a>
+        <a href="#تواصل">تواصل معنا</a>
+      </nav>
+      <a class="nav-call" href="tel:+966560676613">☎ اتصل الآن</a>
+    </div>
+  </header>
+
+  <main id="الرئيسية">
+    <div class="side-actions" aria-label="تواصل سريع">
+      <a class="side-btn side-whatsapp" href="https://wa.me/966560676613?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20عزل%20أو%20تنظيف%20خزان" target="_blank" rel="noopener" aria-label="واتساب">
+        <small>واتساب العروض</small>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.02 2a9.93 9.93 0 0 0-8.57 15.02L2 22l5.13-1.34A9.94 9.94 0 1 0 12.02 2Zm0 18.16a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.05.8.82-2.97-.2-.31a8.2 8.2 0 1 1 6.91 3.8Zm4.5-6.15c-.25-.13-1.47-.73-1.7-.81-.23-.09-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-1.46-.73-2.42-1.3-3.39-2.94-.26-.45.26-.42.74-1.4.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09s.9 2.42 1.03 2.59c.13.17 1.76 2.69 4.26 3.77 1.58.68 2.2.74 2.99.62.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.11-.23-.17-.48-.29Z"/></svg>
+      </a>
+      <a class="side-btn side-phone" href="tel:+966560676613" aria-label="اتصال">
+        <small>اتصال بالعروض</small>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2c.28-.28.67-.37 1.02-.25 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.26 1.02l-2.19 2.2Z"/></svg>
+      </a>
+    </div>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><i></i> شركة عزل خزانات بالرياض</div>
+          <h1>خزان أنظف، <em>مياه أضمن</em>.</h1>
+          <p class="hero-copy">نعتني بخزانك من الداخل والخارج: تنظيف احترافي وعزل متين يساعدك تحافظ على جودة المياه وتحمي بيتك من التسربات.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/966560676613?text=السلام%20عليكم،%20أرغب%20في%20معرفة%20تفاصيل%20العرض" target="_blank" rel="noopener">تحدث معنا على واتساب <span>↗</span></a>
+            <a class="btn btn-dark" href="tel:+966560676613">اتصال بالعروض <span>☎</span></a>
+          </div>
+          <p class="hero-note"><span>★ 4.9/5</span> من تقييمات عملائنا في الرياض · خدمة سريعة ومواعيد مرنة</p>
+        </div>
+        <div class="flyer" aria-label="تفاصيل العرض">
+          <div class="flyer-head"><span class="flyer-kicker">عرض الرياض</span><span class="limited">لفترة محدودة</span></div>
+          <h2>نظافة وعزل<br>يرفعان راحة بالك</h2>
+          <p>اختر الخدمة المناسبة لخزانك، وفريقنا يتولى الباقي باهتمام ودقة.</p>
+          <div class="price-row">
+            <div class="price-box"><b>250</b><span>تنظيف الخزان · ريال</span></div>
+            <div class="price-box"><b>750</b><span>عزل الخزان · ريال</span></div>
+          </div>
+          <span class="drop-icon">◒</span>
+          <div class="flyer-footer"><span>📍 الرياض وما حولها</span><span>متاح للحجز الآن</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust">
+      <div class="container trust-line">
+        <span><strong>★ 4.9</strong> تقييم العملاء</span>
+        <span>✓ أسعار واضحة بدون مفاجآت</span>
+        <span>✓ عناية ونظافة من البداية للنهاية</span>
+      </div>
+    </div>
+
+    <section id="من-نحن">
+      <div class="container about-grid">
+        <div class="about-card">
+          <h3>المياه النظيفة تبدأ من الخزان.</h3>
+          <p>نؤمن أن العناية بالخزان ليست رفاهية؛ إنها خطوة أساسية لبيت أكثر أمانًا وراحة. نصل إليك في الرياض وننفذ العمل باحتراف ووضوح.</p>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow"><i></i> من نحن</div>
+          <h3>خبرة عملية، ونتيجة تلاحظها.</h3>
+          <p>نقدم خدمات تنظيف وعزل الخزانات للأفراد والمنشآت، مع اهتمام بالتفاصيل من الفحص الأول حتى تسليم الخزان جاهزًا للاستخدام.</p>
+          <ul class="check-list">
+            <li>فريق ملتزم بالمواعيد</li>
+            <li>خامات عزل مناسبة للاستخدام</li>
+            <li>خدمة داخل الرياض وما حولها</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section" id="خدماتنا">
+      <div class="container">
+        <div class="section-head">
+          <h2>خدماتنا</h2>
+          <p>حلول عملية لخزانك، بأسعار العرض الحالية وبدون تعقيد.</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <div class="service-icon">💧</div>
+            <h3>تنظيف الخزانات</h3>
+            <p>إزالة الرواسب والأوساخ والعناية بتفاصيل الخزان ليعود أنظف وأفضل للاستخدام.</p>
+            <a class="service-link" href="https://wa.me/966560676613?text=أرغب%20في%20حجز%20تنظيف%20الخزان" target="_blank" rel="noopener">احجز بـ 250 ريال ←</a>
+          </article>
+          <article class="service">
+            <div class="service-icon">🛡️</div>
+            <h3>عزل الخزانات</h3>
+            <p>عزل يساعد على حماية الخزان وتقليل فرص التسرب، مع تنفيذ منظم ونتيجة تدوم.</p>
+            <a class="service-link" href="https://wa.me/966560676613?text=أرغب%20في%20حجز%20عزل%20الخزان" target="_blank" rel="noopener">احجز بـ 750 ريال ←</a>
+          </article>
+          <article class="service">
+            <div class="service-icon">🔎</div>
+            <h3>فحص واستشارة</h3>
+            <p>شاركنا حالة خزانك، وسنساعدك تعرف الخدمة الأنسب قبل بدء العمل.</p>
+            <a class="service-link" href="tel:+966560676613">اتصل للاستشارة ←</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>لماذا نحن؟</h2>
+          <p>نجعل خطوة العناية بالخزان أسهل وأوضح وأسرع.</p>
+        </div>
+        <div class="features">
+          <div class="feature"><b>سرعة في الاستجابة</b><span>نرتب موعدك بأقرب وقت متاح.</span></div>
+          <div class="feature"><b>عرض واضح</b><span>تعرف السعر والخدمة قبل البدء.</span></div>
+          <div class="feature"><b>اهتمام بالتفاصيل</b><span>نعمل بنظافة وتنظيم في كل مرحلة.</span></div>
+          <div class="feature"><b>تغطية الرياض</b><span>نخدم الأحياء داخل المدينة وما حولها.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft-section" id="التقييمات">
+      <div class="container">
+        <div class="section-head">
+          <h2>ماذا قال عملاؤنا؟</h2>
+          <p>تجارب حقيقية من أشخاص اختاروا العناية بخزاناتهم.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review"><div class="stars">★★★★★</div><p>“التعامل ممتاز والموعد كان دقيق. نظفوا الخزان بشكل مرتب وشرحوا لي كل شيء.”</p><div class="review-user"><span class="avatar">م</span><span>محمد · حي النخيل</span></div></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“طلبت العزل، الخدمة سريعة والسعر مثل العرض بالضبط. تجربة مريحة جدًا.”</p><div class="review-user"><span class="avatar">س</span><span>سارة · حي الياسمين</span></div></article>
+          <article class="review"><div class="stars">★★★★★</div><p>“فريق محترم ونتيجة واضحة. أنصح بهم لأي شخص يحتاج تنظيف أو عزل خزان.”</p><div class="review-user"><span class="avatar">ع</span><span>عبدالله · حي الشفا</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="تواصل">
+      <div class="container">
+        <div class="contact-box">
+          <div><h2>خزانك يستحق بداية نظيفة.</h2><p>احجز عرضك اليوم عبر واتساب أو اتصل مباشرة — الرياض 0560676613</p></div>
+          <div class="contact-buttons">
+            <a class="btn btn-dark" href="https://wa.me/966560676613?text=السلام%20عليكم،%20أرغب%20في%20حجز%20عرض%20الخزان" target="_blank" rel="noopener">واتساب الآن ↗</a>
+            <a class="btn btn-light" href="tel:+966560676613">0560676613 ☎</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="copyright">© <span id="year">2026</span> عزل خزانات الرياض — جميع الحقوق محفوظة</span>
+      <span>تم التصميم بواسطة <a class="designer" href="https://wa.me/201029095046?text=مرحبًا%20م.%20نجوى،%20أرغب%20في%20التواصل%20معك" target="_blank" rel="noopener">م نجوي ابراهيم</a></span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">أهلًا بك — اختر واتساب أو الاتصال للحجز.</div>
+  <script>
+    (function () {
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+      var toast = document.getElementById('toast');
+      var actionLinks = document.querySelectorAll('a[href^="tel:"], a[href*="wa.me"]');
+      actionLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (window.ttq && typeof window.ttq.track === 'function') {
+            window.ttq.track('Contact', {
+              content_name: (link.textContent || link.getAttribute('aria-label') || 'تواصل').trim(),
+              content_type: link.href.indexOf('wa.me') !== -1 ? 'whatsapp' : 'phone'
+            });
+          }
+          if (!toast || window.innerWidth > 700) return;
+          toast.classList.add('show');
+          window.clearTimeout(window.__toastTimer);
+          window.__toastTimer = window.setTimeout(function () { toast.classList.remove('show'); }, 2600);
+        });
+      });
+    }());
+  </script>
+</body>
+</html>
